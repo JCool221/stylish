@@ -1,0 +1,14 @@
+.oops {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.return {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.error {
+    border-bottom: 2px solid black;
+}

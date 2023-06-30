@@ -1,0 +1,15 @@
+:root {
+  --text: #000;
+  --trans: linear-gradient(to right, #55CDFC 0%, #F7A8B8 20%, #FFFFFF 40%, #F7A8B8 60%, #55CDFC 80%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --ti-cursor-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}

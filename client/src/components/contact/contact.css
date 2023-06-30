@@ -1,0 +1,51 @@
+.contact {
+    height: 100vh;
+    width: 65vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 75%;
+    padding: 1rem;
+}
+
+.contact-form > * {
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    display: flex;
+    justify-content: flex-start;
+}
+.form-group>* {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    font-size: 1.25rem;
+}
+
+#email:focus {
+    outline: none;
+}
+#body:focus {
+    outline: none;
+}
+
+.contact-button {
+    /* width: 100%; */
+    background-color: transparent;
+    font-size: 1.25rem;
+    /* box-shadow: none; */
+    border: none;
+}
+
+.thanks {
+    font-size: 1.5rem;
+}

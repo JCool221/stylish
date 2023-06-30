@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Blogstacker",
+        "image": "./images/blogstacker.png",
+        "description": "A MySQL based CRUD app using Node, Express, Sequelize, Handlebars and other technologies.",
+        "github": "https://github.com/JCool221/BlogStacker",
+        "link": "https://glacial-everglades-68873.herokuapp.com/"
+    },
+    {
+        "title": "MediaPhile",
+        "image": "./images/mediaphile.png",
+        "description": "A full-stack photo sharing site utilizing Node, Express, Handlebars, AWS and S3.",
+        "github": "https://github.com/team-Pending/pending",
+        "link": "https://mediaphile.herokuapp.com/"
+    },
+    {
+        "title": "WhatIsTheWeather",
+        "image":"./images/whatistheweather.png",
+        "description": "A weather app with 5 day forecast using REST, JQUERY, and Bootstrap",
+        "github": "https://github.com/JCool221/WhatistheWeather",
+        "link": "https://jcool221.github.io/WhatistheWeather/"
+    },
+    {
+        "title": "SchedulerMe",
+        "image": "./images/schedulerme.png",
+        "description": "A workday scheduler using Bootstrap, Fontawesome, JQuery and Moment.",
+        "github": "https://github.com/JCool221/Schedulerme",
+        "link":"https://jcool221.github.io/Schedulerme/"
+    },
+    {
+        "title": "VirtualBarcade",
+        "image": "./images/virtualBarcade.png",
+        "description": "A RESTFUL toy using Fetch on multiple APIs.",
+        "github": "https://github.com/CocktailMusicMatch/CocktailMusicMatch",
+        "link":"https://cocktailmusicmatch.github.io/CocktailMusicMatch/#"
+    }
+]

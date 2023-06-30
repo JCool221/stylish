@@ -1,0 +1,19 @@
+nav {
+    position: fixed;
+    display: flex;
+    width: 15%;
+    float: left;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul {
+    text-align: center;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}

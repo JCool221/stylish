@@ -1,0 +1,99 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.portfolio-card {
+    max-height: 50%;
+    max-width: 50%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 15%;
+    box-shadow: 5px 5px 15px black;
+    padding-bottom: 3rem;
+    z-index: 10;
+}
+
+
+.info-card {
+    transition: all .5s ease-in-out;
+    background-color: coral;
+    border: 1px solid black;
+    box-shadow: 5px 5px 15px;
+    color: white;
+    opacity: 75%;
+    height: 60%;
+    width: 66%;
+    position: absolute;
+    z-index: 1;
+    translate: 40rem 7rem;
+}
+.portfolio-card>h1 {
+    font-family: monospace;
+}
+
+.popout {
+    position: relative;
+    display: flex;
+    z-index: 0;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 460px;
+    width: 736px;
+}
+
+.portfolio-img {
+    object-fit: fill;
+    object-position: top left;
+    width: 90%;
+    height: auto;
+    border: 1px solid black;   
+}
+
+.popout:hover .info-card {
+    translate: 5.6rem 7rem;
+}
+
+.portfolio-desc {
+    font-size: larger;  
+    margin-bottom: 1rem;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+}
+
+.button-link {
+    height: fit-content ;
+    border: 2px solid black;
+    margin: 1rem;
+    border-radius: 10%;
+    padding: 1px;
+    background-color: aquamarine;
+    transition: all .2s ease-in-out;
+    transform-origin: center center;
+}
+.button-link:hover{
+    font-size: large;
+}
+
+.portfolio-icon {
+    font-size: 3rem;
+    padding: 1px;
+    margin: 1rem;
+    transition: all .2s ease-in-out;
+}
+
+.portfolio-icon:hover {
+    font-size: 4rem;
+}

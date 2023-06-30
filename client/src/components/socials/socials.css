@@ -1,0 +1,24 @@
+.socials {
+    /* color: aliceblue; */
+    position: fixed;
+    font-size: 4rem;
+    bottom: 1rem;
+    right: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.social-icon {
+    transition: all .2s;
+}
+
+.social-icon:hover {
+    rotate: 360deg;
+    transform: scale(1.2);
+}
+
+.social-icon:active {
+    transform: scale(1);
+}
