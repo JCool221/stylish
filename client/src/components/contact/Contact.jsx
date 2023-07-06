@@ -9,12 +9,20 @@ const [isSubmitted, setIsSubmitted] = useState(null)
 
 const handleSubmit = async (e) => {
   e.preventDefault();
+  console.log(e.target.email)
   const formData = new FormData(e.target)
-  console.log(formData)
+  const config = {
+    headers: {
+      'Content-Type':'multipart/form-data',
+    },
+  };
+  // const value = JSON.stringify(Object.fromEntries(formData.entries()))
+  // console.log(value)
   setIsSubmitted(true)
   // use axios to post it
   try {
-    await axios.post('/contact', formData)
+    const response = await axios.post('/contact', formData, config)
+    console.log(response.data)
   } catch(error) {
     console.error('An error occured:', error)
     setError(error.response ? error.response.status: 500)
@@ -33,13 +41,13 @@ const handleSubmit = async (e) => {
       <h1>Contact Me</h1>
       <div className="form-group">
       <label htmlFor="email">Email |</label>
-      <input type="email" name="email" id="email" />
+      <input type="email" name="email" id="email" autoFocus="autofocus"/>
       </div>
       <div className="form-group">
       <label htmlFor="body">Message |</label>
         <textarea 
         name="body" 
-        id="body" 
+        id="body"   
         cols="18" 
         rows="5" 
         />
