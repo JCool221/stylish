@@ -7,9 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd client && npm run build",
     "serve": "cd server && node index.js",
-    "go": "npm run build && npm run serve"
+    "go": "npm run build && npm run serve",
+    "dev": "concurrently \"cd client && npm run dev\" \"cd server && npm run dev\""
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.0",
+    "react-helmet-async": "^1.3.0"
+  }
 }
