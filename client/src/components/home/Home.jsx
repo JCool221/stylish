@@ -11,13 +11,13 @@ function Home() {
           enable CSS <br/>
         </p>
       </div> */}
-      <span className="styling">        
+      <span className="edit-me">        
       Welcome to my page.  I have an unhealthy fascination with CSS.
       </span>
 
       <style className="styleplay" contentEditable>{
         `
-        .styling {
+        .edit-me {
           color: red;
           font-size: 2rem;
         }
