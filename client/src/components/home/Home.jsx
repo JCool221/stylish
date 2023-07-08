@@ -1,18 +1,17 @@
-// import TypeIt from 'typeit-react'
+import { Helmet } from 'react-helmet-async'
 import './home.css'
 
 function Home() {
   return (
     <div className='homepage'>
-      {/* <div className="terminal">
-        <p className='terminal-text'>systemctl start portfolio<br/>
-          ...starting...<br/>
-          portfolio running<br/>
-          enable CSS <br/>
-        </p>
-      </div> */}
-      <span className="edit-me">        
-      Welcome to my page.  I have an unhealthy fascination with CSS.
+      <Helmet>
+        <title>Josh Cooley</title>
+        <meta name='description' content='Welcome to my homepage, take a look around.  Edit the css on home, check out my portfolio.' />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+      </Helmet>
+      <span className="edit-me">
+        Welcome to my page.  I have an unhealthy fascination with CSS.
+        i don't like this, i need to come up with something better, like a cool portrait
       </span>
 
       <style className="styleplay" contentEditable>{
@@ -22,9 +21,9 @@ function Home() {
           font-size: 2rem;
         }
         `
-        }</style>
+      }</style>
     </div>
-    
+
   )
 }
 
