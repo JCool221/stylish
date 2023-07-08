@@ -12,7 +12,7 @@
   margin: 0;
   padding: 0;
   margin-left: 15%;
-  background: radial-gradient(circle at top left, #fff, #bdd5e7);
+  background: var(--gradient);
 }
 
 .wrapper {
