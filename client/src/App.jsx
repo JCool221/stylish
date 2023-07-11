@@ -17,13 +17,17 @@ function App() {
 
   const themeVariables = {
     dark: {
-      '--background-color': '#000',
-      '--text-color': '#fff',
+      '--background-color': '#121212',
+      '--text-color': '#e1d9d1',
+      '--accent': '#a0522d',
+      '--shadows': 'none',
       '--gradient': 'radial-gradient(circle at top left, #1a1a1a, #393939)',
     },
     light: {
       '--background-color': '#fff',
       '--text-color': '#000',
+      '--accent': '#fbceb1',
+      '--shadows': '5px 5px 15px var(--text-color)',
       '--gradient': 'radial-gradient(circle at top left, #fff, #bdd5e7)'
     }
   }

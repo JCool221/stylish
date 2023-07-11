@@ -1,4 +1,5 @@
 .about {
+    color: var(--text-color);
     font-size: x-large;
     height: 100vh;
     width: 65%;
@@ -8,35 +9,3 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-
-@keyframes appearAnim {
-    0% {
-        width: 0;
-        height: 0;
-    }
-    100% {
-        width: 15rem;   
-        height: 10rem;
-       
-    }
-}
-
-.terminal {
-    position: fixed;
-    border: 10px gray solid;
-    outline: 1px black solid;
-    background-color: black;
-    top: 2rem;
-    right: 2rem;
-    animation: appearAnim 2s ease-in-out 0 1 forwards;
-}
-
-.terminal-text {
-    margin: 1rem;
-    margin-top: 0;
-    font-family: monospace;
-    color: lawngreen;
-    height: 100%;
-    width: 100%;
-}
-

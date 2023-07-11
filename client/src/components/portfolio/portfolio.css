@@ -13,9 +13,9 @@
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    border: 2px solid black;
+    border: 2px solid var(--text-color);
     border-radius: 15%;
-    box-shadow: 5px 5px 15px black;
+    box-shadow: var(--shadows);
     padding-bottom: 3rem;
     z-index: 10;
 }
@@ -23,16 +23,17 @@
 
 .info-card {
     transition: all .5s ease-in-out;
-    background-color: coral;
-    border: 1px solid black;
-    box-shadow: 5px 5px 15px;
-    color: white;
-    opacity: 75%;
+    background: var(--gradient);
+    border: 1px solid var(--text-color);
+    box-shadow: var(--shadows);
+    color: var(--text-color);
+    opacity: 85%;
     height: 60%;
-    width: 66%;
+    width: 80%;
     position: absolute;
     z-index: 1;
-    translate: 40rem 7rem;
+    translate: 50rem 7rem;
+    padding: 15px;
 }
 .portfolio-card>h1 {
     font-family: monospace;
@@ -75,17 +76,21 @@
 
 .button-link {
     height: fit-content ;
-    border: 2px solid black;
+    font-family: monospace;
+    font-size: 1.25REM;
     margin: 1rem;
     border-radius: 10%;
     padding: 1px;
-    background-color: aquamarine;
     transition: all .2s ease-in-out;
     transform-origin: center center;
 }
+
 .button-link:hover{
-    font-size: large;
+    text-decoration: underline;
 }
+
+
+
 
 .portfolio-icon {
     font-size: 3rem;
