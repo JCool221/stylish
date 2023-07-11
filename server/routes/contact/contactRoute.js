@@ -5,7 +5,7 @@
     const {email, body} = req.body;
 
     console.log(email)
-    // console.log(body)
+    console.log(body)
 
     res.send('recieved')  
   })

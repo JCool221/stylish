@@ -16,17 +16,19 @@
 
 .contact-form > * {
     margin-bottom: 1rem;
+    
 }
 
 .form-group {
     display: flex;
     justify-content: flex-start;
 }
+
 .form-group>* {
     border: none;
     background-color: transparent;
     resize: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--text-color);
     padding: 5px;
     font-size: 1.25rem;
 }
@@ -48,4 +50,5 @@
 
 .thanks {
     font-size: 1.5rem;
+    text-align: center;
 }
