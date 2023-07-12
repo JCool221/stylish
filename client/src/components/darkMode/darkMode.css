@@ -1,5 +1,22 @@
 .darkmode {
-    position: absolute;
+    position: fixed;
     bottom: 1rem;
     left: 2rem;
+}
+
+.darkmode-toggle {
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 50%;
+    background: transparent;
+    height: 2rem;
+    width: 2rem;
+    box-shadow: none;
+    border: none;
+    color: var(--text-color);
+}
+
+.darkmode-toggle:hover {
+    background-color: var(--background-invert);
+    color: var(--text-invert);
 }

@@ -1,5 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux'
 import { toggleDarkMode } from './darkModeSlice'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
 
 import './darkMode.css'
 
@@ -13,7 +15,9 @@ const handleDarkModeToggle = () => {
 
   return (
     <div className='darkmode'>
-        <button className='darkmode-toggle' onClick={handleDarkModeToggle}>dark mode</button>
+        <button className='darkmode-toggle' onClick={handleDarkModeToggle}>
+          {isDarkMode ? <FontAwesomeIcon icon={faSun}/> : <FontAwesomeIcon icon={faMoon} /> }
+          </button>
     </div>
   )
 }

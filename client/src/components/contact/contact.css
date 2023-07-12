@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--text-color);
+
 }
 
 .contact-form {
@@ -12,7 +14,8 @@
     align-items: start;
     height: 75%;
     padding: 1rem;
-}
+    caret-color: var(--text-color);
+}   
 
 .contact-form > * {
     margin-bottom: 1rem;
@@ -25,6 +28,7 @@
 }
 
 .form-group>* {
+    color: var(--text-color);
     border: none;
     background-color: transparent;
     resize: none;
@@ -46,9 +50,13 @@
     font-size: 1.25rem;
     /* box-shadow: none; */
     border: none;
+    color: var(--text-color);
+
 }
 
 .thanks {
     font-size: 1.5rem;
     text-align: center;
+    color: var(--text-color);
+
 }

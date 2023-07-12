@@ -1,6 +1,6 @@
 import './socials.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faGithub, faLinkedin, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 function Socials() {
   return (
