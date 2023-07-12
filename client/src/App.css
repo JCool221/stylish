@@ -1,12 +1,7 @@
-:root {
-  /* --accent: #b57c8d; */
-}
 
 * {
-  /* overflow: hidden; */
   padding: 0;
   margin: 0;
-  color: var(--text-color);
 }
 
 

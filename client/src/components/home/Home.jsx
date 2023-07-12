@@ -1,19 +1,13 @@
-import { Helmet } from 'react-helmet-async'
 import './home.css'
 
 function Home() {
   return (
+    <div className='homewrap'>
     <div className='homepage'>
-      <Helmet>
-        <title>Josh Cooley</title>
-        <meta name='description' content='Welcome to my homepage, take a look around.  Edit the css on home, check out my portfolio.' />
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-      </Helmet>
-
-      <article>
-        I think we're going to do a picture here and some kind of impact blurb
-        i'll work on the full formatting later, and i ned to find a picture of me i like
+      <img src="https://fakeimg.pl/250x350/?text=Hello" />
+      <article className='hometext'>Hello there, my name is Josh and I like to make web apps.  I write clean, readable code with a focus on accessibility.  I  know my way around several frameworks as well as no framework javascript but I really like to work with React.  I like to build attractive, accessible, responsive components.<br/>  Anyway, I look forward to hearing from you!
       </article>
+    </div>
     </div>
 
   )
