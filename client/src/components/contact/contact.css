@@ -28,6 +28,7 @@
 }
 
 .form-group>* {
+    color: var(--text-color);
     border: none;
     background-color: transparent;
     resize: none;

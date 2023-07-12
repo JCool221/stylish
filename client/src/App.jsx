@@ -7,6 +7,7 @@ import Socials from './components/socials/Socials'
 import Home from './components/home/Home'
 import About from './components/about/About'
 import Contact from './components/contact/Contact'
+import Resume from './components/resume/Resume'
 import { Portfolio } from './components/portfolio/Portfolio'
 import { Helmet } from 'react-helmet-async'
 
@@ -42,6 +43,8 @@ const style = {
   ...themeVariables[theme]
 }
 
+const pdfUrl = 'https://docs.google.com/document/d/13O1ix-3WMe-mfYpmKFA76fXVhb0mRN_4/edit?usp=drive_link&ouid=105648232379234870496&rtpof=true&sd=true';
+
   return (
     <HelmetProvider>
             <Helmet>
@@ -57,6 +60,7 @@ const style = {
         <Route path='portfolio' element={<Portfolio />} />
         <Route path='about' element={<About />} />
         <Route path='contact' element={<Contact />} />
+        <Route path='resume' element={<Resume pdfUrl={pdfUrl} />} />
         <Route path='*' element={<Home />} />
       </Routes>
       </div>
