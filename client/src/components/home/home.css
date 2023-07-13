@@ -1,19 +1,27 @@
 .homewrap {
   display: flex;
   justify-content: center;
-    /* align-items: center; */
 }
 .homepage {
     display: flex;
-    flex-direction: row;
-    width: 55%;
-    height: 100vh;
-    justify-content: space-between;
     align-items: center;
-}
-
-.hometext {
-  width: 55%;
-  color: var(--text-color);
-
+    flex-direction: column;
+    justify-content: center;
+    /* margin-top: 8.5rem; */
+    overflow-y: scroll;
+  }
+  
+  .hometext {
+    width: 55%;
+    color: var(--text-color);
+  }
+  
+  @media (min-width: 1000px) {
+    .homepage {
+      height: 100vh;
+      flex-direction: row;
+      width: 55%;
+      justify-content: space-between;
+      margin-top: 0;
+  }
 }
