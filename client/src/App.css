@@ -6,13 +6,14 @@
 
 
 .box {
-  /* background-color: black; */
   columns: white;
-  width: 100%;
+  width: 100vw;
   margin: 0;
   padding: 0;
-  margin-left: 15%;
   background: var(--gradient);
+  position: fixed;
+  z-index: 0;
+  top: 20%;
 }
 
 .wrapper {
@@ -27,4 +28,11 @@ ul {
 a {
   color: var(--text-color);
   text-decoration: none;
+}
+
+@media (min-width: 1000px) {
+  .box {
+    margin-left: 15%;    
+    top:0;
+  }
 }

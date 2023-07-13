@@ -43,7 +43,7 @@ const style = {
   ...themeVariables[theme]
 }
 
-const pdfUrl = 'https://docs.google.com/document/d/13O1ix-3WMe-mfYpmKFA76fXVhb0mRN_4/edit?usp=drive_link&ouid=105648232379234870496&rtpof=true&sd=true';
+// const pdfUrl = 'https://docs.google.com/document/d/13O1ix-3WMe-mfYpmKFA76fXVhb0mRN_4/edit?usp=drive_link&ouid=105648232379234870496&rtpof=true&sd=true';
 
   return (
     <HelmetProvider>
@@ -55,16 +55,15 @@ const pdfUrl = 'https://docs.google.com/document/d/13O1ix-3WMe-mfYpmKFA76fXVhb0m
 
     <div className="wrapper" style={style}>
       <Nav/>
-      <div className='box'>
+      <div className='box' >
       <Routes>
         <Route path='portfolio' element={<Portfolio />} />
         <Route path='about' element={<About />} />
         <Route path='contact' element={<Contact />} />
-        <Route path='resume' element={<Resume pdfUrl={pdfUrl} />} />
+        <Route path='resume' element={<Resume />} />
         <Route path='*' element={<Home />} />
       </Routes>
       </div>
-      <DarkMode />
       <Socials />
     </div>
     </HelmetProvider>

@@ -8,6 +8,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
+    z-index: 100;
 }
 
 .social-icon {

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './nav.css'
+import DarkMode from '../darkMode/DarkMode'
 
 function Nav() {
   return (
@@ -15,6 +16,7 @@ function Nav() {
             <li><Link to='/contact'>Contact</Link></li>
             <li><Link to='/resume'>Resume</Link></li>
         </ul>
+        <DarkMode/>
     </nav>
   )
 }

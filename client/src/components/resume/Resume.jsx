@@ -1,45 +1,28 @@
-import { useEffect, useRef } from 'react';
-import pdfjsLib from 'pdfjs-dist';
+import { Document, Page } from 'react-pdf'
+import resume from '../../assets/resume.pdf'
+import { pdfjs } from 'react-pdf';
+import 'react-pdf/dist/esm/Page/TextLayer.css';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+import './resume.css'
 
-const Resume = ({ pdfUrl }) => {
-  const canvasRef = useRef(null);
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.js',
+  import.meta.url,
+).toString();
 
-  useEffect(() => {
-    const renderPdf = async () => {
-      try {
-        // Load the PDF document
-        const loadingTask = pdfjsLib.getDocument(pdfUrl);
-        const pdf = await loadingTask.promise;
+function Resume() {
+    console.log(resume)
+  return (
+    <div className='resume-wrapper'>
+        <Document file={resume}>
+            <Page pageNumber={1} />
+        </Document>
+        <Document file={resume}>
+            <Page pageNumber={2} />
+        </Document>
 
-        // Get the first page of the PDF
-        const page = await pdf.getPage(1);
+    </div>
+  )
+}
 
-        // Set up the canvas
-        const canvas = canvasRef.current;
-        const context = canvas.getContext('2d');
-        const viewport = page.getViewport({ scale: 1 });
-        const scale = canvas.clientWidth / viewport.width;
-        const scaledViewport = page.getViewport({ scale });
-
-        // Set the canvas dimensions based on the scaled viewport
-        canvas.width = scaledViewport.width;
-        canvas.height = scaledViewport.height;
-
-        // Render the page to the canvas
-        const renderContext = {
-          canvasContext: context,
-          viewport: scaledViewport,
-        };
-        await page.render(renderContext);
-      } catch (error) {
-        console.error('Error rendering PDF:', error);
-      }
-    };
-
-    renderPdf();
-  }, [pdfUrl]);
-
-  return <canvas ref={canvasRef} style={{ width: '50%' }} />;
-};
-
-export default Resume;
+export default Resume
