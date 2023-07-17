@@ -4,22 +4,10 @@
   margin: 0;
 }
 
-
-.box {
-  columns: white;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  background: var(--gradient);
-  position: fixed;
-  z-index: 0;
-  top: 20%;
+.box{
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
-
-.wrapper {
-  display: flex;
-}
-
 
 ul {
   list-style: none;
@@ -34,5 +22,6 @@ a {
   .box {
     margin-left: 15%;    
     top:0;
+    background: var(--gradient);
   }
 }

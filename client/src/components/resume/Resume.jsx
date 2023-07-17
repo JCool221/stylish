@@ -14,7 +14,7 @@ function Resume() {
     console.log(resume)
   return (
     <div className='resume-wrapper'>
-        <Document file={resume}>
+        <Document  file={resume}>
             <Page pageNumber={1} />
         </Document>
         <Document file={resume}>

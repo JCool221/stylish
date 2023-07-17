@@ -7,8 +7,9 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    /* margin-top: 8.5rem; */
-    overflow-y: scroll;
+    overflow: scroll;
+    margin-top: 10rem;
+    height: 100%;
   }
   
   .hometext {
