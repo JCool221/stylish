@@ -1,7 +1,7 @@
 .darkmode {
     position: fixed;
-    bottom: 1rem;
-    left: 2rem;
+    bottom: 92%;
+    left: 85%;
 }
 
 .darkmode-toggle {
@@ -19,4 +19,13 @@
 .darkmode-toggle:hover {
     background-color: var(--background-invert);
     color: var(--text-invert);
+}
+
+@media (min-width: 1000px) {
+    .darkmode {
+        bottom: 1rem;
+        left: 2rem;
+
+    }
+
 }

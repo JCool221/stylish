@@ -57,6 +57,8 @@
     color: var(--text-color);
 }
 
+
+
 @media (min-width: 1000px) {
     .contact{
         height: 100vh;

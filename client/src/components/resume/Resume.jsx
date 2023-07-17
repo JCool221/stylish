@@ -11,17 +11,24 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString();
 
 function Resume() {
-    console.log(resume)
-  return (
+  console.log(resume)
+  return (<>
     <div className='resume-wrapper'>
-        <Document  file={resume}>
-            <Page pageNumber={1} />
-        </Document>
-        <Document file={resume}>
-            <Page pageNumber={2} />
-        </Document>
+      <Document file={resume}>
+        <Page pageNumber={1} />
+      </Document>
+      <Document file={resume}>
+        <Page pageNumber={2} />
+      </Document>
 
     </div>
+      <a
+        className='resume-download'
+        href="https://drive.google.com/uc?export=download&id=13O1ix-3WMe-mfYpmKFA76fXVhb0mRN_4"
+        >
+        Download my resume here!
+      </a>
+        </>
   )
 }
 
