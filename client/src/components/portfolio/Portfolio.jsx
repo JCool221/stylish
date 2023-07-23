@@ -13,7 +13,7 @@ export const Portfolio = () => {
             <div className="popout">
             <img className='portfolio-img' src={data.image} alt={data.title} />
             <div className='info-card'>
-                <h1>{data.title}</h1>
+                <h1 className='title2'>{data.title}</h1>
             <p className='portfolio-desc'>{data.description}</p>
             <div className="links">
             <a href={data.github}className='portfolio-icon'><FontAwesomeIcon icon={faGithubSquare} /></a>

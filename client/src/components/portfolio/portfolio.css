@@ -1,106 +1,125 @@
-.portfolio {
+.portfolio{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    z-index: 10;
-    color: var(--text-color);
-
+    text-align: center;
+    padding-top: 8rem;
+    border-bottom: 2px solid var(--text-color);
+}
+.portfolio-img{
+    display: none;
 }
 
-.portfolio-card {
-    max-height: 50%;
-    max-width: 50%;
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    border: 2px solid var(--text-color);
-    border-radius: 15%;
-    box-shadow: var(--shadows);
-    padding-bottom: 3rem;
-    z-index: 10;
+.title2{
+    display: none;
 }
 
-
-.info-card {
-    transition: all .5s ease-in-out;
-    background: var(--gradient);
-    border: 1px solid var(--text-color);
-    box-shadow: var(--shadows);
-    color: var(--text-color);
-    opacity: 85%;
-    height: 60%;
-    width: 80%;
-    position: absolute;
-    z-index: 1;
-    translate: 50rem 7rem;
-    padding: 15px;
-}
-.portfolio-card>h1 {
-    font-family: monospace;
-}
-
-.popout {
-    position: relative;
-    display: flex;
-    z-index: 0;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    height: 460px;
-    width: 736px;
-}
-
-.portfolio-img {
-    object-fit: fill;
-    object-position: top left;
-    width: 90%;
-    height: auto;
-    border: 1px solid black;   
-}
-
-.popout:hover .info-card {
-    translate: 5.6rem 7rem;
-}
-
-.portfolio-desc {
-    font-size: larger;  
-    margin-bottom: 1rem;
-}
-
-.links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 6rem;
-}
-
-.button-link {
-    height: fit-content ;
-    font-family: monospace;
-    font-size: 1.25REM;
-    margin: 1rem;
-    border-radius: 10%;
-    padding: 1px;
-    transition: all .2s ease-in-out;
-    transform-origin: center center;
-}
-
-.button-link:hover{
-    text-decoration: underline;
-}
-
-
-
-
-.portfolio-icon {
-    font-size: 3rem;
-    padding: 1px;
-    margin: 1rem;
-    transition: all .2s ease-in-out;
-}
-
-.portfolio-icon:hover {
-    font-size: 4rem;
+@media (min-width: 1000px) {
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 10;
+        color: var(--text-color);
+    
+    }
+    .title2{
+        display: block;
+    }
+    .portfolio-card {
+        max-height: 50%;
+        max-width: 50%;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        border: 2px solid var(--text-color);
+        border-radius: 15%;
+        box-shadow: var(--shadows);
+        padding-bottom: 3rem;
+        z-index: 10;
+    }
+    
+    
+    .info-card {
+        transition: all .5s ease-in-out;
+        background: var(--gradient);
+        border: 1px solid var(--text-color);
+        box-shadow: var(--shadows);
+        color: var(--text-color);
+        opacity: 85%;
+        height: 60%;
+        width: 80%;
+        position: absolute;
+        z-index: 1;
+        translate: 50rem 7rem;
+        padding: 15px;
+    }
+    .portfolio-card>h1 {
+        font-family: monospace;
+    }
+    
+    .popout {
+        position: relative;
+        display: flex;
+        z-index: 0;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        height: 460px;
+        width: 736px;
+    }
+    
+    .portfolio-img {
+        display: block;
+        object-fit: fill;
+        object-position: top left;
+        width: 90%;
+        height: auto;
+        border: 1px solid black;   
+    }
+    
+    .popout:hover .info-card {
+        translate: 5.6rem 7rem;
+    }
+    
+    .portfolio-desc {
+        font-size: larger;  
+        margin-bottom: 1rem;
+    }
+    
+    .links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 6rem;
+    }
+    
+    .button-link {
+        height: fit-content ;
+        font-family: monospace;
+        font-size: 1.25REM;
+        margin: 1rem;
+        border-radius: 10%;
+        padding: 1px;
+        transition: all .2s ease-in-out;
+        transform-origin: center center;
+    }
+    
+    .button-link:hover{
+        text-decoration: underline;
+    }
+    
+    .portfolio-icon {
+        font-size: 3rem;
+        padding: 1px;
+        margin: 1rem;
+        transition: all .2s ease-in-out;
+    }
+    
+    .portfolio-icon:hover {
+        font-size: 4rem;
+    }
+    
+    
 }

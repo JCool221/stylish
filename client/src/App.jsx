@@ -43,7 +43,6 @@ const style = {
   ...themeVariables[theme]
 }
 
-// const pdfUrl = 'https://docs.google.com/document/d/13O1ix-3WMe-mfYpmKFA76fXVhb0mRN_4/edit?usp=drive_link&ouid=105648232379234870496&rtpof=true&sd=true';
 
   return (
     <HelmetProvider>
