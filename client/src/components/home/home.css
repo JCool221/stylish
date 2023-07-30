@@ -11,7 +11,10 @@
     margin-top: 10rem;
     height: 100%;
   }
-  
+  .home-img{
+    border-radius: 5px;
+    filter: brightness(85%);
+  }
   .hometext {
     width: 55%;
     color: var(--text-color);
@@ -24,5 +27,6 @@
       width: 55%;
       justify-content: space-between;
       margin-top: 0;
+      overflow: hidden;
   }
 }
