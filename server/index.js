@@ -5,7 +5,7 @@ const multer = require('multer')
 
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const upload = multer();
 
 const buildPath = path.join(__dirname, '..', 'client', 'dist')
