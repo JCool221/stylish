@@ -17,9 +17,6 @@ function Resume() {
       <Document file={resume}>
         <Page pageNumber={1} />
       </Document>
-      <Document file={resume}>
-        <Page pageNumber={2} />
-      </Document>
 
     </div>
       <a
